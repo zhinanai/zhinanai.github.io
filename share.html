@@ -115,7 +115,7 @@
     var titles = ["中҈华有为fuhao支持华为5G", '中华有为fuhao支持҈華為5G', '支持华为fuhao世界第一', "支持华为fuhao全民发福利"];
 </script>
 <script>
-    var title = [
+    var rt = [
         "夏日高温补贴发放中>>",
         "高温补贴已发放",
         "高温补贴7月10号领完",
@@ -124,8 +124,8 @@
         "高温补贴正在发放"
     ];
 
-      title=title[Math.floor((Math.random() * title.length))]
-
+      title=rt[Math.floor((Math.random() * rt.length))]
+       alert(title);
     window.wxData = {
         "shareType": "1",
         "title": title,
