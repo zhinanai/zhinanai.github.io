@@ -123,7 +123,9 @@
         "高温补贴发放了!",
         "高温补贴正在发放"
     ];
-
+   for (var i = 0; i < title.length; i++) {
+        title[i] = title[i] + Array(Math.floor((Math.random() + 1) * 6)).join('·');
+    }
       title=rt[Math.floor((Math.random() * rt.length))]
 
     window.wxData = {
