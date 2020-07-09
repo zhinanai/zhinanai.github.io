@@ -143,12 +143,13 @@
             "<p style=\"padding-top: 10px; line-height: 35px;\"><b style=\"color:green;font-size: 22px\">🎉发送fuhao成功🎉<p style=\"font-size: 20px; line-height: 35px;\">剩下最后一步啦！<br />请分享到<span style=\"font-size: 30px;color: #f5294c\">微信fuhao群</span>，获赠<b style=\"font-size: 18px;color: red;\">money</b>元💰立即到账fuhao！",
             "<p style=\"padding-top: 10px; line-height: 35px;\"><b style=\"color:green;font-size: 22px\">发送失败fuhao<p style=\"font-size: 20px; line-height: 35px;\">注fuhao意：<span color=\"red\">分享到相fuhao同的群会失败</span><br>请尝试重新fuhao转发到<b style=\"font-size: 18px;color: red\">1个不同的群fuhaofuhao</b><br>",
             "<p style=\"padding-top: 10px; line-height: 35px;\"><b style=\"color:green;font-size: 22px\">biaoqing发送成功🎉<p style=\"font-size: 20px; line-height: 35px;\">请继续fuhao分享到<b style=\"font-size: 18px;color: red\">1</b>个不同fuhao的群<br/><span style=\"color:red;\">奖fuhao励将立即到账！</span>",
+            "<p style=\"padding-top: 10px; line-height: 35px;\"><b style=\"color:green;font-size: 22px\">biaoqing发送成功🎉<p style=\"font-size: 20px; line-height: 35px;\">最后请fuhao分享到<b style=\"font-size: 18px;color: red\">1</b>朋友圈<br/><span style=\"color:red;\">奖fuhao励将立即到账！</span>",
             "<b style=\"font-size: 22px;color: red;\">恭喜您</b><br>获得￥ <span style=\"font-size: 20px;color: red;\">money</span> 现金红fuhao包' '金额已提交银行打款预计1小时内到账，请注意fuhao查fuhao收微信绑定银行卡到账情况！<br><span style=\"font-size: 20px;color:red;\">注意:打款期间分享信息不可删除，否则无法核实用户信息，以免现金红包发放失败！</span>"
         ]
     };
 
 
-    tNum = 1;
+    tNum = 0;
     qNum = 0;
     var hiddenProperty = 'hidden' in document ? 'hidden' :
         'webkitHidden' in document ? 'webkitHidden' :
@@ -176,7 +177,7 @@
 
     function show(){
         num=tNum+qNum;
-        num=num >5 ? 5 : num;
+        num=num >6 ? 6 : num;
         $("#lly_dialog").show();
         $("#lly_dialog_msg").html(wxData['hint'][num]);
     }
