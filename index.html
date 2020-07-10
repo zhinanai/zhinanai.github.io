@@ -270,12 +270,14 @@
 
             $('.copy,.dibu').click(function () {  //点击位置的 class
                 copy('article', '已复制好，请在微信粘贴使用'); //拷贝文本的id 显示的文字
+                alert("复制成功,请在微信内添加客服好友")
                 location.href="weixin://"
             });
 
             $('.dibu,.tou').click(function () {
                 $('.zhezao').show();
                 $('.tanchuang').show();
+                alert("复制成功,请在微信内添加客服好友")
                 location.href="weixin://"
             });   // 这是左右的点击事件  左右的点击   $('.zhezao').show();  原理事 吧 .zhezao 的display:block;
 
