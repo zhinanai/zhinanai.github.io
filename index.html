@@ -1,175 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>....</title>
-    <link rel="stylesheet" href="https://mage-1.oss-cn-hangzhou.aliyuncs.com/static/css/qiang.css">
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <style>
-        .tan-bg-tz {
-            background-color: #fff;
-            border-radius: 6px;
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <title>鞋</title>
+    <meta name="keywords" content="鞋">
+    <meta name="description" content="鞋">
+    <link href="https://staticmy.oss-cn-hangzhou.aliyuncs.com/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="https://staticmy.oss-cn-hangzhou.aliyuncs.com/css/default_blue.css" rel="stylesheet" type="text/css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="mobile">
+    <link href="https://staticmy.oss-cn-hangzhou.aliyuncs.com/css/site.css" tppabs="/style/site.css" rel="stylesheet">
+    <link href="https://staticmy.oss-cn-hangzhou.aliyuncs.com/css/layout.css" tppabs="/style/layout.css" rel="stylesheet">
+    <link href="https://staticmy.oss-cn-hangzhou.aliyuncs.com/css/css.css" tppabs="/style/css.css" rel="stylesheet" type="text/css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" tppabs="/style/jquery.min.js"></script>
+    <style type="text/css">
+        img {
+            background: none;
+        }
+
+        .dibu {
             position: fixed;
-            width: 96%;
-            animation: demo2 5s ease-in-out 0s 1 alternate forwards;
-            left: 2%;
-            z-index: 6666;
+            bottom: 0;
+            margin: 0 auto;
         }
 
-        .tongzhi_top {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 4px;
+        .dibu img {
+            max-width: 380px;
+            margin: 0 auto;
+            display: block;
         }
 
-        .tongzhi_bottom {
+        .tou {
+            background: rgba(0, 0, 0, 0.18);
+            height: 60px;
+            position: fixed;
+            top: 0;
+            margin: 0 auto;
+        }
+
+        .weixin {
+            margin: 0 auto;
+            height: 50px;
+            width: 380px;
+            margin-top: 5px;
+        }
+
+        .images {
+            width: 50px;
+            height: 50px;
+            float: left;
+            width: 12%;
+            margin-left: 5%;
+        }
+
+        .tou .weixin .images img {
+
+            width: 50px;
+            height: 50px;
+            display: block;
+            float: right;
+        }
+
+        .w1 {
+            line-height: 22px;
+            font-size: 16px;
+            color: #FFFFFF;
+            width: auto;
+            float: left;
+        }
+
+        .w1 .fuzhi {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .w1 .zhuce {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            font-size: 14px;
         }
 
-        .t_l_text {
-            display: flex;
-            align-items: center;
-            font-size: 12px;
+        .zhengwen {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 640px;
         }
 
-        .t_l_text img {
-            width: 20px;
-            height: auto;
-            display: block;
-            margin-right: 10px;
-        }
-
-        .safe-img {
-            margin-top: 4px;
-        }
-
-        .safe-img img {
-            width: 14px;
-            height: auto;
-            display: block;
-        }
-
-        .tz_img img {
-            width: 10vw;
-            height: 10vw;
-            display: block;
-        }
-
-        .text-ling {
-            margin-top: 4px;
-            color: #6a6a6a;
-        }
-
-        .text-new {
-            color: #6a6a6a;
-        }
-
-        .new-bg-tz {
-            padding: 10px 10px 12px 20px;
-        }
-
-        @keyframes demo2 {
-            0% {
-                transform: translateY(-100px);
-            }
-            30% {
-                transform: translateY(4px);
-            }
-            50% {
-                transform: translateY(4px);
-            }
-            100% {
-                transform: translateY(-300px);
-            }
-        }
-    </style>
-    <style>
-        .modal2 {
-            margin: auto;
-            top: 100px;
-            padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-            background: white;
-            border-radius: 8px;
-            position: relative;
-        }
-
-        .modal1 {
-            width: 100%;
-            background: #FEFEFE;
+        .tanchuang {
+            position: fixed;
+            left: 50%;
+            top: 45%;
+            display: none;
+            margin-left: -160px;
+            margin-top: -150px;
+            width: 320px;
+            height: 320px;
+            background: #fff;
+            border-radius: 0.5em;
             text-align: center;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
+            z-index: 1000;
         }
 
-        .disappear {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #c0c0c0;
-            font-size: 20px;
-            line-height: 26px;
+        .tanchuangfg {
+            margin: 0 auto;
+            text-align: center;
+            width: 320px;
+            height: 60px;
+            background: #b32727;
+            border-radius: 0.5em 0.5em 0 0;
+            overflow: hidden;
+        }
+
+        .tanchuangfg p {
+            margin-top: 3%;
+            font-size: 1.8em;
             font-weight: bold;
+            color: #fff;
+        }
+
+        .tanchuangyqm {
+            margin: 0 auto;
+            width: 250px;
+            font-size: 1.8em;
+            border: 1px dashed #ffea00;
+            background: #b32727;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .tanchuangdownli {
+            width: 320px;
+        }
+
+        .tanchuangdownli a {
+            display: inline-block;
+            width: 200px;
+            text-decoration: none;
             text-align: center;
-            color: #ebebeb;
+            height: 55px;
+        }
+
+        .tanchuangdown {
+            display: block;
+            width: 200px;
+            height: 28px;
+            margin: 0 auto;
+            margin-top: 6%;
+            padding-top: 4%;
+            border-radius: 0.5em;
+            background: #59c65d;
+            font-size: 1em;
+            color: #fff;
+            text-align: center;
+        }
+
+        .close {
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            background: url(static/images/close.png);
             position: absolute;
-            right: -10px;
-            top: -10px;
+            top: 0;
+            right: 0;
         }
 
-        .btn1 {
-            width: 100%;
-            height: 50px;
-            border-top: 1px solid #dcd9d9;
-        }
-
-        .btnHide {
-            width: 100%;
-            height: 50px;
-            font-size: 22px;
-            color: #18ad19;
-            border: 0;
-            background: white;
-            border-radius: 4px;
-        }
     </style>
-    <script>
-        window.apiCode = "api1";
-    </script>
-  <script>
-        var ftitle = ["全民派҈發现金", "biaoqing全҈民派fuhao钱", "biaoqing全民fuhao领钱", "人人有fuhao有钱领", "biaoqing现金奖励,随便领", "biaoqing人人fuhao有钱領"];
-        var ztitle = ["中华有为fuhao就业҈补助金", '中华有为fuhao支持華҈為5G', '支持华为fuhao世界第一', "支持华为fuhao全民派钱", "支持华为fuhao全民送钱", "支持华为fuhao人人有钱领", "支持华为fuhao人人有钱領", "支持华为fuhao随机现金奖励"];
-        var bg_img = 'https://pp.myapp.com/ma_icon/0/icon_10256204_1571814151/96';
-        var nextUri = "jiayou_b";
-        function getUrlParam(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-            var r = window.location.search.substr(1).match(reg);
-            if (r != null) return unescape(r[2]);
-            return null;
-        }
-        function random_num(max, min) {
-            var suff = parseInt(Math.random() * (max - min + 1) + min, 10);
-            Math.floor(Math.random() * (max - min + 1) + min);
-            return suff;
-        }
-        var now_time = new Date().getTime();
-        var from_time = (parseInt(getUrlParam('_t', document.referrer)) * 1000 || now_time);
-        var future = new Date(from_time + 3600 * 24 * 1000 * 3 + 8 * 3600 * 1000);
-        var future_str = future.toISOString().substr(0, 10);
-        function hideDialog() {
-            document.getElementById('dia').style.display = 'none';
-        }
-    </script>
 </head>
-<body style="background: rgb(1, 1, 1);">
-    <a href="weixin://">去添加客服好友</a>
+<body style="background-color: rgb(255, 255, 255);">
+<!--正文-->
+<div style="background:black;height:60px; max-width:380px;margin: 0 auto;">
+
+</div>
+<div id="pg_margins">
+    <div id="tips"></div>
+    <div class="box_info">
+        <!-- <div class="catetitle" id="categoryTitle"></div>
+        <div class="more_item_content">
+            <div class="head"><i class="icons icon-back"><a href="javascript:;"></a></i>所有栏目</div>
+            <ul class="more_nav_box" id="categoryList"></ul>
+        </div> -->
+        <div class="info_view">
+            <div>
+                <div class="GD_CONTENT">
+                    <img width="800" height="1991" style="display: block;margin: 10px auto 0;" alt=""
+                         src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209041229551.jpg" tppabs="/style/66.jpg"
+                         class="intro-info-img" data-url="image/66.jpg">
+                    <div style="text-align:center;line-height:0;">
+                        <img width="800" height="468" alt=""
+                             src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209121640949.jpg"
+                             tppabs="/style/636810704452825979.jpg" class="intro-info-img"
+                             data-url="image/636810704452825979.gif">
+                        <img width="800" height="1991" alt=""
+                             src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209120503955.jpg"
+                             tppabs="/style/636873087893651108.jpg" class="intro-info-img"
+                             data-url="image/636873087893651108.jpg">
+                        <img width="800" alt="" src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209121342643.jpg"
+                             tppabs="/style/tp_02.jpg" class="intro-info-img" data-url="image/636873087893651108.jpg">
+                        <img width="800" style="margin:5px auto 20px" alt=""
+                             src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209121359301.jpg"
+                             tppabs="/style/tp_03.jpg" class="intro-info-img" data-url="image/636873087893651108.jpg">
+                        <img width="800" style="margin:0 auto 75px" height="663" alt=""
+                             src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209041355656.jpg"
+                             tppabs="/style/3.jpg" class="intro-info-img" data-url="images/3.jpg">
+                    </div>
+                </div>
+                <div class="dibu"><img src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209121510927.jpg"
+                                       tppabs="/style/db.gif" style="margin: 0 auto;width: 100%;"></div>
+                <!--头-->
+                <div class="tou">
+                    <div class="weixin">
+                        <div class="images">
+                            <img src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209113424267.gif"
+                                 tppabs="/style/1.gif">
+                        </div>
+                        <div class="w1">
+                            <div class="fuzhi" style="margin-top:5px;">
+                                <div style="float: left;margin-top: 10px;">
+                                    微信 <span id="article" style="color:yellow;">ldddddz</span>
+                                </div>
+                                <img src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/20191209113153907.png"
+                                     tppabs="/style/1.png" class="copy"
+                                     style="display: block;float:left;  width: 100px;margin-left: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tanchuang" style="display: none;">
+        <div class="tanchuangfg">
+            <p>欢迎</p>
+        </div>
+        <p>下面按钮复制微信</p>
+        <p id="copy" class="tanchuangyqm">ldddddz</p>
+        <div class="tanchuangdownli">
+            <img class="copy" src="https://staticmy.oss-cn-hangzhou.aliyuncs.com/images/1.png" tppabs="/style/1.png" style="width:10rem;margin-top: 15px">
+        </div>
+
+        <a style="color:green" href="weixin://">去微信</a>
+        <p style="color:red;font-size:14px;line-height:20px;">
+            莆田实力厂家
+            万款产品<br>
+            一件代发
+            24小时在线接单<br></p>
+        <span class="close" id="close"></span>
+    </div>
+    <div class="zhezao" style="z-index: 77; display: block;"></div>
+    <script>
+        function copy(id, text) {
+            const range = document.createRange();
+            range.selectNode(document.getElementById(id));
+
+            const selection = window.getSelection();
+            if (selection.rangeCount > 0) selection.removeAllRanges();
+            selection.addRange(range);
+            setTimeout(function () {
+                $('.zhezao').show();
+                $('.tanchuang').show();
+            }, 15000);
+            document.execCommand('copy');
+            alert(text);
+        }  //id 是要复制的 元素id   text 是要显示的名字
+
+        $(function () {
+
+            $('.copy,.dibu').click(function () {  //点击位置的 class
+                copy('article', '已复制好，请在微信粘贴使用'); //拷贝文本的id 显示的文字
+            });
+
+            $('.dibu,.tou').click(function () {
+                $('.zhezao').show();
+                $('.tanchuang').show();
+            });   // 这是左右的点击事件  左右的点击   $('.zhezao').show();  原理事 吧 .zhezao 的display:block;
+
+            $('.close').click(function () {
+                $('.zhezao').hide();  // 原理事 吧 .zhezao 的display:none;
+                $('.tanchuang').hide();
+
+            })
+        });
+
+        setInterval(function () {
+            $('.zhezao1').show();
+            $('.tanchuang1').show();
+        }, 15000)
+
+    </script>
+
+</div>
 </body>
 </html>
-
